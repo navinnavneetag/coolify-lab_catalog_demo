@@ -8,12 +8,12 @@ import config from "./utils/config.js";
 const app = express();
 
 const cors_options = {
-  origin: config.ALLOWED_ORIGINS?.split(','),
+  origin: config.ALLOWED_ORIGINS?.split(","),
   methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
   credentials: true,
 };
 
-app.use(cors(cors_options));
+app.use(cors());
 
 app.use(express.json());
 
