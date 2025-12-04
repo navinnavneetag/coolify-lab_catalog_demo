@@ -6,7 +6,7 @@ const poolConfig = {
   port: config.POSTGRES_DB_PORT,
   database: config.POSTGRES_DATABASE,
   password: config.POSTGRES_PASSWORD,
-  ssl: { rejectUnauthorized: false },
+  // ssl: { rejectUnauthorized: false },
 };
 
 export default poolConfig;

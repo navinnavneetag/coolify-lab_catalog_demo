@@ -17,12 +17,13 @@ function Navbar() {
         <div className="flex items-center gap-4">
           <img src="/pngegg.png" alt="logo" className="h-10 w-16" />
           <h1 className="font-semibold text-foreground">
-            Lab Scope Management
+            National Food Labs Database
           </h1>
         </div>
         <div className="flex gap-2 items-center justify-center">
           <Button onClick={handleLogout} variant="destructive" size="sm">
-            <TbLogout2 size={24} />Logout
+            <TbLogout2 size={24} />
+            Logout
           </Button>
           <Avatar>
             <AvatarImage src="https://static.vecteezy.com/system/resources/previews/005/544/718/non_2x/profile-icon-design-free-vector.jpg" />

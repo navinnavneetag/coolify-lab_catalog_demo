@@ -9,11 +9,14 @@ const GridContainer = memo(function GridContainer({ name, value }) {
   return (
     <>
       <div className="rounded border bg-card text-card-foreground shadow p-4 flex gap-4 items-center justify-start">
-        <div className={`items-center gap-2 p-1 lg:p-3 rounded lg:block hidden`} style={{ backgroundColor: "#8b5cf6" }}>
+        <div
+          className={`items-center gap-2 p-1 lg:p-3 rounded lg:block hidden`}
+          style={{ backgroundColor: "#8b5cf6" }}
+        >
           {name === "Total Labs" && (
             <ChemicalGlass size="28 " color="#d9e3f0" variant="TwoTone" />
           )}
-          {name === "Total Entries" && (
+          {name === "Total Unique Parameters" && (
             <Data size="28" color="#d9e3f0" variant="TwoTone" />
           )}
           {name === "Main Food Categories" && (
@@ -36,10 +39,7 @@ const GridContainer = memo(function GridContainer({ name, value }) {
 
 GridContainer.propTypes = {
   name: PropTypes.string.isRequired,
-  value: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.number
-  ]).isRequired,
+  value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
 };
 
 export default GridContainer;

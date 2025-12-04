@@ -26,7 +26,7 @@ export const useLabData = () => {
           title: "No data found!!",
           description: "There are no labs with the selected filters",
         });
-        
+
         localStorage.getItem("Lab Name") && localStorage.removeItem("Lab Name");
         localStorage.getItem("Main Food Category") &&
           localStorage.removeItem("Main Food Category");
@@ -126,8 +126,8 @@ export const useLabData = () => {
       },
       {
         id: 2,
-        name: "Total Entries",
-        value: data?.total_entries,
+        name: "Total Unique Parameters",
+        value: data?.categories?.parameter?.length || 0,
       },
       {
         id: 3,

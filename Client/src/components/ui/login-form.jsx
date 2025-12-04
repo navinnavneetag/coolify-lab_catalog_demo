@@ -24,19 +24,19 @@ export function LoginForm({ className, ...props }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsLoading(true);
-    
+
     const result = await login(email, password);
-    
+
     if (result.success) {
       navigate("/");
     } else {
       toast({
         variant: "destructive",
         title: "Login Failed",
-        description: result.error
+        description: result.error,
       });
     }
-    
+
     setIsLoading(false);
   };
 
@@ -47,7 +47,7 @@ export function LoginForm({ className, ...props }) {
   return (
     <div className={cn("flex flex-col gap-6", className)} {...props}>
       <div className="text-balance text-center text-3xl font-semibold text-muted-foreground [&_a]:underline [&_a]:underline-offset-4 [&_a]:hover:text-primary  ">
-        Lab Scope Management
+        National Food Labs Database
       </div>
       <Card>
         <CardHeader className="text-center">
