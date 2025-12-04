@@ -46,7 +46,7 @@ export function LoginForm({ className, ...props }) {
 
   return (
     <div className={cn("flex flex-col gap-6", className)} {...props}>
-      <div className="text-balance text-center text-3xl font-semibold text-muted-foreground [&_a]:underline [&_a]:underline-offset-4 [&_a]:hover:text-primary  ">
+      <div className="text-balance text-center text-2xl font-semibold text-muted-foreground [&_a]:underline [&_a]:underline-offset-4 [&_a]:hover:text-primary  ">
         National Food Labs Database
       </div>
       <Card>
